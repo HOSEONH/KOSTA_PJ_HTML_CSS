@@ -1,0 +1,7 @@
+{
+  "name": "htmlcss_diary_project",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "echo 'No build script for vanilla JS'"
+  }
+}
