@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diary</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="logo-container">
+      <div class="logo">My Diary</div>
+    </div>
+    <div class="container">
+      <div class="decoration22"></div>
+      <div class="diary-container">
+        <div class="diary-header" id="currentDate">2025년 3월 11일</div>
+
+        <div class="diary-content">
+          <div class="diary-photo" id="diaryImageContainer"></div>
+
+          <div class="diary-text" id="diaryContent"></div>
+        </div>
+
+        <div class="diary-actions"></div>
+
+        <div class="photo-upload">
+          <textarea
+            id="newDiaryContent"
+            placeholder="오늘의 일기를 입력하세요..."
+          ></textarea>
+
+          <input type="hidden" id="existingImage" />
+          <label for="photoUpload">사진 업로드</label>
+          <input type="file" id="photoUpload" accept="image/*" />
+          <button class="save-button" id="saveButton">저장하기</button>
+        </div>
+      </div>
+
+      <div class="calendar-container">
+        <div class="calendar-header">
+          <button id="prevMonth" class="calendar-btn">&lt;</button>
+
+          <div class="calendar-title" id="calendarTitle">2025년 3월</div>
+          <button id="nextMonth" class="calendar-btn">&gt;</button>
+        </div>
+
+        <div class="day-names">
+          <div>일</div>
+          <div>월</div>
+          <div>화</div>
+          <div>수</div>
+          <div>목</div>
+          <div>금</div>
+          <div>토</div>
+        </div>
+
+        <div class="calendar" id="calendarGrid"></div>
+      </div>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
