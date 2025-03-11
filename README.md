@@ -1,1 +1,1 @@
-https://hoseonh.github.io/KOSTA_PJ_HTML_CSS/
+🌐 https://projectdiary.vercel.app/
