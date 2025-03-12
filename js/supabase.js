@@ -1,8 +1,8 @@
 import { createClient } from "https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm";
+import config from "../config/key.js";
 
-const supabaseUrl = "https://yvwevnmqdpskjltbvhah.supabase.co";
-const supabaseAnonKey =
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inl2d2V2bm1xZHBza2psdGJ2aGFoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDE2MjI0OTEsImV4cCI6MjA1NzE5ODQ5MX0.Ako7cviq-edtoopw8mbqMGjZtS9MZ17FXG4AVIGZ_Es";
+const supabaseUrl = config.supabaseUrl;
+const supabaseAnonKey = config.supabaseAnonKey;
 
 export const supabase = createClient(supabaseUrl, supabaseAnonKey);
 
